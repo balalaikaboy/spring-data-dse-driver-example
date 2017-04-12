@@ -13,7 +13,7 @@ example in the [spring-data-examples](https://github.com/spring-projects/spring-
 dependency of `spring-data-cassandra`.  `dse-driver` is then defined as a separate dependency.   This should allow the
 `dse-driver` to be used as a drop in replacement for `cassandra-driver-core`.
 
-[The second adjustment](./src/main/java/com/datastax/examples/AppConfig.java#L37-L43) in this particular example is to override the `getAuthProvider()` method in the
+[The second adjustment](./src/main/java/com/datastax/examples/AppConfig.java#L36-L39) in this particular example is to override the `getAuthProvider()` method in the
 `AbstractCassandraConfiguration` to use `DsePlainTextAuthProvider`.
 
 ## Setting up a Local DSE Node for Testing
